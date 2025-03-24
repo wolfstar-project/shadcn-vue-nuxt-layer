@@ -1,0 +1,18 @@
+<template>
+	<DialogDescription :class="cn('text-muted-foreground text-sm', props.class)" v-bind="delegatedProps">
+		<slot />
+	</DialogDescription>
+</template>
+
+<script setup lang="ts">
+import { type HTMLAttributes, computed } from 'vue';
+import { DialogDescription, type DialogDescriptionProps } from 'reka-ui';
+
+const props = defineProps<DialogDescriptionProps & { class?: HTMLAttributes['class'] }>();
+
+const delegatedProps = computed(() => {
+	const { class: _, ...delegated } = props;
+
+	return delegated;
+});
+</script>
