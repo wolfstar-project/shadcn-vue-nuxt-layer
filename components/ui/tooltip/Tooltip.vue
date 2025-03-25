@@ -10,7 +10,7 @@
 					<span v-if="text" :class="ui.text({ class: props.ui?.text })">{{ text }}</span>
 
 					<span v-if="kbds?.length" :class="ui.kbds({ class: props.ui?.kbds })">
-						<UKbd
+						<Kbd
 							v-for="(kbd, index) in kbds"
 							:key="index"
 							:size="(props.ui?.kbdsSize || ui.kbdsSize()) as KbdProps['size']"
@@ -28,9 +28,19 @@
 <script setup lang="ts">
 import { computed, toRef } from 'vue';
 import { defu } from 'defu';
-import { TooltipRoot, TooltipTrigger, TooltipPortal, TooltipContent, TooltipArrow, useForwardPropsEmits } from 'reka-ui';
+import {
+	TooltipRoot,
+	TooltipTrigger,
+	TooltipPortal,
+	TooltipContent,
+	TooltipArrow,
+	useForwardPropsEmits,
+	type TooltipContentProps,
+	type TooltipArrowProps
+} from 'reka-ui';
 import { reactivePick } from '@vueuse/core';
-import { Kbd } from '@/components/ui/kbd';
+import { Kbd, type KbdProps } from '@/components/ui/kbd';
+import { tooltip, type TooltipEmits, type TooltipProps, type TooltipSlots } from '.';
 
 const props = withDefaults(defineProps<TooltipProps>(), {
 	portal: true
