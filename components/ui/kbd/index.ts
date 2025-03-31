@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { tv, type VariantProps } from 'tailwind-variants';
 export { default as Kbd } from './Kbd.vue';
 
@@ -28,7 +29,7 @@ export interface KbdProps {
 	 * The element or component this component should render as.
 	 * @defaultValue 'kbd'
 	 */
-	as?: any;
+	as?: string;
 	value?: KbdKey | string;
 	/**
 	 * @defaultValue 'outline'

@@ -6,16 +6,10 @@ export { default as AvatarGroup } from './AvatarGroup.vue';
 export const avatarGroupVariants = tv({
 	slots: {
 		root: 'inline-flex flex-row-reverse justify-end',
-		base: 'relative rounded-full ring-(--ui-bg) first:me-0'
+		base: 'avatar-group -space-x-2'
 	},
 	variants: {
 		size: {
-			'3xs': {
-				base: 'ring -me-0.5'
-			},
-			'2xs': {
-				base: 'ring -me-0.5'
-			},
 			xs: {
 				base: 'ring -me-0.5'
 			},
@@ -29,12 +23,6 @@ export const avatarGroupVariants = tv({
 				base: 'ring-2 -me-1.5'
 			},
 			xl: {
-				base: 'ring-3 -me-2'
-			},
-			'2xl': {
-				base: 'ring-3 -me-2'
-			},
-			'3xl': {
 				base: 'ring-3 -me-2'
 			}
 		}

@@ -13,7 +13,7 @@
 		/>
 
 		<slot v-else>
-			<UIcon v-if="icon" :name="icon" :class="ui.icon({ class: props.ui?.icon })" />
+			<Icon v-if="icon" :name="icon" :class="ui.icon({ class: props.ui?.icon })" />
 			<AvatarFallback v-else :class="ui.fallback({ class: props.ui?.fallback })">{{ fallback || '&nbsp;' }}</AvatarFallback>
 		</slot>
 	</AvatarBase>
@@ -21,6 +21,8 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { avatarVariant, AvatarFallback, AvatarBase, type AvatarProps } from '.';
+import { Icon } from '@/components/ui/icon';
+import { useAvatarGroup } from '@/components/ui/avatar-group/avatar-group';
 
 const props = withDefaults(defineProps<AvatarProps>(), {
 	size: 'md',
