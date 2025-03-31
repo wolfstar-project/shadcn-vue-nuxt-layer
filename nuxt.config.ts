@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 	},
 	shadcn: {
 		prefix: 'U',
-		componentDir: './components/ui'
+		componentDir: join(currentDir, './components/ui')
 	},
 	icon: {
 		clientBundle: {
