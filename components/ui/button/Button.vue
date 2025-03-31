@@ -57,6 +57,7 @@ import type { ButtonSlots, ButtonProps } from '.';
 import { FORM_LOADING_INJECTION_KEY } from '../form/injectionKeys';
 import { buttonVariants } from '@/components/ui/button';
 import { useButtonGroup } from '@/components/ui/button-group/button-group';
+import { useComponentIcons } from '~/composables/useComponentIcons';
 
 const props = withDefaults(defineProps<ButtonProps>(), {
 	active: undefined,

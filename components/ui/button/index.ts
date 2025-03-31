@@ -2,6 +2,7 @@ import { type VariantProps, tv } from 'tailwind-variants';
 import type { LinkProps } from '../link';
 import type { HTMLAttributes } from 'vue';
 import { buttonGroupVariant } from '../button-group';
+import type { UseComponentIconsProps } from '~/composables/useComponentIcons';
 
 export { default as Button } from './Button.vue';
 
