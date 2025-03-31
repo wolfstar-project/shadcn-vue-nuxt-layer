@@ -16,10 +16,16 @@ export default defineNuxtConfig({
 		classSuffix: '',
 		fallback: 'light'
 	},
-	shadcn: {
-		prefix: 'U',
-		componentDir: join(currentDir, './components/ui')
-	},
+	components: [
+		{
+			path: join(currentDir, './components/ui'),
+			// this is required else Nuxt will autoImport `.ts` file
+			extensions: ['.vue'],
+			// prefix for your components, eg: UiButton
+			prefix: 'U'
+		}
+	],
+
 	icon: {
 		clientBundle: {
 			scan: true
