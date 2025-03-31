@@ -1,6 +1,6 @@
 <template>
 	<TableRow>
-		<TableCell :class="cn('text-foreground p-4 align-middle text-sm whitespace-nowrap', props.class)" v-bind="delegatedProps">
+		<TableCell :class="cn('text-foreground whitespace-nowrap p-4 align-middle text-sm', props.class)" v-bind="delegatedProps">
 			<div class="flex items-center justify-center py-10">
 				<slot />
 			</div>
@@ -15,7 +15,6 @@ import TableCell from './TableCell.vue';
 
 const props = withDefaults(
 	defineProps<{
-		// eslint-disable-next-line vue/require-default-prop
 		class?: HTMLAttributes['class'];
 		colspan?: number;
 	}>(),

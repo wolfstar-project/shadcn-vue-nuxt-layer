@@ -4,6 +4,7 @@ import sapphirePrettierConfig from '@sapphire/prettier-config';
 export default {
 	...sapphirePrettierConfig,
 	plugins: ['prettier-plugin-tailwindcss', 'prettier-plugin-css-order'],
+	tailwindStylesheet: './app/assets/css/main.css',
 	overrides: [
 		...sapphirePrettierConfig.overrides,
 		{

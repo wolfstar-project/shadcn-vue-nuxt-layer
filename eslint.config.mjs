@@ -36,7 +36,11 @@ export default withNuxt(
 			],
 
 			'vue/no-multiple-template-root': 'off',
-			'vue/singleline-html-element-content-newline': 'off'
+			'vue/singleline-html-element-content-newline': 'off',
+			'vue/multi-word-component-names': 'off',
+			'vue/require-default-props': 'off',
+			'vue/require-default-prop': 'off',
+			'@typescript-eslint/no-explicit-any': 'off'
 		}
 	},
 	eslintPluginPrettierRecommended

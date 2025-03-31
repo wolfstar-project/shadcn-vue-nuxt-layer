@@ -1,5 +1,5 @@
 <template>
-	<ComboboxContent v-bind="forwarded" :class="cn('max-h-[300px] overflow-x-hidden overflow-y-auto', props.class)">
+	<ComboboxContent v-bind="forwarded" :class="cn('max-h-[300px] overflow-y-auto overflow-x-hidden', props.class)">
 		<div role="presentation">
 			<slot />
 		</div>

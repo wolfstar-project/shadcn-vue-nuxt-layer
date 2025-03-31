@@ -48,7 +48,8 @@
     "prettier-plugin-css-order": "^2.1.2",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "simple-git-hooks": "^2.12.1",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "vue-component-type-helpers": "^2.2.8"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

@@ -14,7 +14,6 @@ import { PaginationNext, type PaginationNextProps } from 'reka-ui';
 import { Button } from '@/components/ui/button';
 import { Icon } from '@/components/ui/icon';
 
-// eslint-disable-next-line vue/require-default-prop
 const props = withDefaults(defineProps<PaginationNextProps & { class?: HTMLAttributes['class'] }>(), {
 	asChild: true
 });

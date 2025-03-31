@@ -27,7 +27,7 @@ const children = computed(() => {
 	let children = slots.default?.();
 	if (children?.length) {
 		children = children
-			// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
 			.flatMap((child: any) => {
 				if (typeof child.type === 'symbol') {
 					// `v-if="false"` or commented node

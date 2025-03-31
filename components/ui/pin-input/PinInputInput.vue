@@ -3,7 +3,7 @@
 		v-bind="forwardedProps"
 		:class="
 			cn(
-				'focus:ring-ring border-input relative flex h-10 w-10 items-center justify-center border-y border-r text-center text-sm transition-all first:rounded-l-md first:border-l last:rounded-r-md focus:relative focus:z-10 focus:ring-2 focus:outline-none',
+				'focus:ring-ring border-input relative flex h-10 w-10 items-center justify-center border-y border-r text-center text-sm transition-all first:rounded-l-md first:border-l last:rounded-r-md focus:relative focus:z-10 focus:outline-none focus:ring-2',
 				props.class
 			)
 		"

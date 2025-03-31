@@ -27,7 +27,6 @@ const props = defineProps<{
 	config?: ConfigItem | Config<U>;
 }>();
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function isValidConfig(config: any): config is ConfigItem {
 	return config && typeof config.component !== 'undefined';
 }

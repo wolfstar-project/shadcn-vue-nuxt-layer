@@ -1,5 +1,5 @@
 <template>
-	<h3 :class="cn('leading-none font-semibold tracking-tight', props.class)">
+	<h3 :class="cn('font-semibold leading-none tracking-tight', props.class)">
 		<slot />
 	</h3>
 </template>

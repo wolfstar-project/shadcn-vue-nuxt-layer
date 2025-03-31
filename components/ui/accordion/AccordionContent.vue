@@ -3,7 +3,7 @@
 		v-bind="delegatedProps"
 		class="data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up overflow-hidden text-sm"
 	>
-		<div :class="cn('pt-0 pb-4', props.class)">
+		<div :class="cn('pb-4 pt-0', props.class)">
 			<slot />
 		</div>
 	</AccordionContent>

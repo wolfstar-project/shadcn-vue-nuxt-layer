@@ -12,7 +12,6 @@ import { type ToggleVariants, toggleVariants } from '.';
 const props = withDefaults(
 	defineProps<
 		ToggleProps & {
-			// eslint-disable-next-line vue/require-default-prop
 			class?: HTMLAttributes['class'];
 			variant?: ToggleVariants['variant'];
 			size?: ToggleVariants['size'];
