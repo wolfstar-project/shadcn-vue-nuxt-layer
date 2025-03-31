@@ -17,7 +17,8 @@ export default defineNuxtConfig({
 		fallback: 'light'
 	},
 	shadcn: {
-		prefix: 'U'
+		prefix: 'U',
+		componentDir: './components/ui'
 	},
 	icon: {
 		clientBundle: {
